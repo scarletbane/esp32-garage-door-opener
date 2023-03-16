@@ -11,4 +11,25 @@ logger:
 wifi:
     ssid: !secret wifi_ssid
     password: !secret wifi_password
+    domain: !secret local_domain
     power_save_mode: none
+
+ota:
+    password: !secret ota_password
+    port: !secret ota_port
+
+api:
+    port: !secret api_port
+
+# Garage door status
+binary_sensor:
+    - platform: gpio
+      device_class: GARAGE_DOOR
+      name: Garage Door Status
+      pin:
+          number: 16
+          inverted: true
+          mode:
+              input: true
+              pullup: false
+              pulldown: true

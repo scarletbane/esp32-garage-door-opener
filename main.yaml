@@ -20,6 +20,8 @@ ota:
 
 api:
     port: !secret api_port
+    encryption:
+        key: !secret api_key
 
 # Garage door status
 binary_sensor:

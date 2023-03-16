@@ -33,3 +33,15 @@ binary_sensor:
               input: true
               pullup: false
               pulldown: true
+
+# Toogle garage door
+output:
+    - platform: gpio
+      pin: 17
+      id: garage_door_activate
+
+button:
+    - platform: output
+      name: Garage Door
+      output: garage_door_activate
+      duration: 100ms

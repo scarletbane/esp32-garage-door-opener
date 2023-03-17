@@ -29,7 +29,7 @@ binary_sensor:
       device_class: GARAGE_DOOR
       name: Garage Door Status
       pin:
-          number: 16
+          number: 25
           inverted: true
           mode:
               input: true

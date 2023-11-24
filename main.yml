@@ -51,3 +51,4 @@ button:
       name: Garage Door
       output: garage_door_activate
       duration: 100ms
+# TODO Add Button to trigger garage door

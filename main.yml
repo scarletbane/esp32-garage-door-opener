@@ -19,6 +19,7 @@ wifi:
         subnet: !secret subnet
 
 ota:
+    platform: esphome
     password: !secret ota_password
     port: !secret ota_port
 
